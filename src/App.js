@@ -70,10 +70,12 @@ export default function App() {
         />
     ))
 
+    
+
     return (
         <div className="content">
             <main>
-                {tenzies && <Confetti />}
+                {tenzies && <Confetti width={"1920px"} height={"970px"}/>}
                 <h1 className="title">Tenzi</h1>
                 <p className="instructions">Roll until all dice are the same.
                     Click each dice to freeze the value.</p>

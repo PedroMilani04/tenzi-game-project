@@ -12,6 +12,8 @@ body {
     
 }
 
+
+
 .content {
     display: flex;
     align-items: center;
@@ -109,6 +111,39 @@ main {
 
 @media(max-width: 425px) {
     main {
-        background-color: #bd0f0f;
+        width: 380px;
+    }
+
+    .die-face {
+        width: 50px;
+        height: 50px;
+    }
+
+    .reset-dice {
+        height: 70px;
+        width: 180px;
+        margin-left: 0px;
+    }
+    .roll-dice {
+        height: 70px;
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        align-items: right;
+        display: grid;
+      
     }
   }
+
+@media(max-width: 375px) {
+    main {
+        width: 340px;
+    }
+
+    .die-face {
+        width: 40px;
+        height: 40px;
+    }
+}
