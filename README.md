@@ -1,6 +1,6 @@
 <div align="center">
   
-# <a href="http://react-calculator-kappa-ten.vercel.app/">Tenzi Game</a>
+# <a href="https://tenzi-game-project.vercel.app/">Tenzi Game</a>
   
   <img alt="GitHub" src="https://img.shields.io/github/license/ViniUme/LimitsGym?color=ff1c27&style=for-the-badge">
   <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/ViniUme/LimitsGym?color=2c2c2c&label=version&style=for-the-badge">
