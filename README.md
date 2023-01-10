@@ -13,7 +13,7 @@
 <br>
 
 ## About
-A fully functional calculator project, made with ReactJS and CSS. Has all the basic functions and operations of an actual calculator with a personal design.
+Project made with ReactJS and CSS3, inspired by the dice game "Tenzi". The objective is to roll the dices until all the numbers are the same.
 
 <br>
 
