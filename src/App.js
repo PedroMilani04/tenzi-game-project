@@ -3,8 +3,15 @@ import Die from "./Die"
 import { nanoid } from "nanoid"
 import './style.css';
 import Confetti from 'react-confetti'
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function App() {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
 
     const [dice, setDice] = React.useState(allNewDice())
     const [tenzies, setTenzies] = React.useState(false)
@@ -35,7 +42,7 @@ export default function App() {
         return newDice
     }
 
-  
+
     function rollDice() {
         if (!tenzies) {
             setDice(oldDice => oldDice.map(die => {
@@ -70,26 +77,29 @@ export default function App() {
         />
     ))
 
-    
+
 
     return (
         <div className="content">
+            
             <main>
-                {tenzies && <Confetti width={"1920px"} height={"970px"}/>}
-                <h1 className="title">Tenzi</h1>
-                <p className="instructions">Roll until all dice are the same.
+                {tenzies && <Confetti width={"1920px"} height={"970px"} />}
+                <h1 className="title" data-aos="zoom-out">Tenzi</h1>
+                <p className="instructions" data-aos="zoom-out">Roll until all dice are the same.
                     Click each dice to freeze the value.</p>
                 <div className="dice-container">
                     {diceElements}
                 </div>
+
                 <div className="buttons">
                     <button
                         className="roll-dice"
                         onClick={rollDice}
+                        data-aos="zoom-in"
                     >
                         {tenzies ? "New Game" : "Roll"}
                     </button>
-                    <button onClick={reset} className={!tenzies ? "reset-dice" : "reset-dice-off"}>
+                    <button onClick={reset} className={!tenzies ? "reset-dice" : "reset-dice-off"} data-aos="zoom-in">
                         Reset
                     </button>
                 </div>
